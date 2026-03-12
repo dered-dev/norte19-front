@@ -1,0 +1,18 @@
+.container-message {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.background-success {
+    background-color: #75A843;
+}
+
+.background-error {
+    background-color: #ED4C5C;
+}
+
+.text-message {
+    font-size: 10px;
+    color: white;
+    letter-spacing: 1px;
+}

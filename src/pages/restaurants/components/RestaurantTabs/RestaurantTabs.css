@@ -1,0 +1,21 @@
+.nav-tabs .nav-item.show .nav-link,
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover,
+.nav-pills .show > .nav-link {
+  color: white;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 0.25rem;
+}
+
+.nav-pills .nav-link {
+  cursor: pointer;
+  border: 1px solid var(--color-green-extralight);
+  color: var(--color-green-dark);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.tab-pane.active {
+  text-align: center;
+}

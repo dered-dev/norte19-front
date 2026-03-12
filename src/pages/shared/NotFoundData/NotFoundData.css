@@ -1,0 +1,31 @@
+.container-not-found-data {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.img-not-found {
+    margin-bottom: 50px;
+}
+
+.title-not-found {
+    font-size: 128px;
+    color: black;
+    font-weight: 800;
+}
+
+.color-blue-0 {
+    color: #272B67;
+}
+
+.btn-not-found {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: #272B67;
+    color: white;
+    width: 207px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}

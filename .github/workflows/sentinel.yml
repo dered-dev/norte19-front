@@ -1,0 +1,23 @@
+name: Sentinel ci
+env: 
+  CI: false
+on:
+  push:
+    branches: [feature/test-ci-action]
+  pull_request:
+      types: [opened, synchronize, reopened]
+
+jobs:
+  testing:
+    name: Testing 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: lumston/sentinel-ci@main
+        with:
+          RUNTIME_VERSION: 18
+          RUNTIME: node
+          SONAR_PROJECT_NAME: ${{secrets.SONAR_PROJECT_NAME}}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONARQUBE_TOKEN : ${{ secrets.SONARQUBE_TOKEN }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

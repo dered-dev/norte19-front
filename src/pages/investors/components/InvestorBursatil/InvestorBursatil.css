@@ -1,0 +1,15 @@
+.investor-bursatil-tab>.nav-item .nav-link {
+    cursor: pointer;
+    color: #888B8D;
+    border: 1px solid #DBDBDB;
+}
+
+.investor-tab .nav-tabs .nav-item.show .nav-link,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: #272B67;
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+    border-radius: 6px;
+    border: 1px solid #FFFFFF;
+}

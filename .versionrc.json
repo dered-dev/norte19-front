@@ -1,0 +1,47 @@
+{
+  "header": "Changelog",
+  "types": [
+    {
+      "type": "feat",
+      "section": "✨ Features"
+    },
+    {
+      "type": "fix",
+      "section": "🐛 Bug Fixes"
+    },
+    {
+      "type": "chore",
+      "hidden": false,
+      "section": "🚚 Chores"
+    },
+    {
+      "type": "docs",
+      "hidden": false,
+      "section": "📝 Documentation"
+    },
+    {
+      "type": "style",
+      "hidden": false,
+      "section": "💄 Styling"
+    },
+    {
+      "type": "refactor",
+      "hidden": false,
+      "section": "♻️ Code Refactoring"
+    },
+    {
+      "type": "perf",
+      "hidden": false,
+      "section": "⚡️ Performance Improvements"
+    },
+    {
+      "type": "test",
+      "hidden": false,
+      "section": "✅ Testing"
+    }
+  ],
+  "commitUrlFormat": "https://github.com/lumston/cityexpress-sitioweb-typescript-react-frontend/commit/{{hash}}",
+  "compareUrlFormat": "https://github.com/lumston/cityexpress-sitioweb-typescript-react-frontend/compare/{{previousTag}}...{{currentTag}}",
+  "issuePrefixes": ["#"],
+  "issueUrlFormat": "https://github.com/lumston/cityexpress-sitioweb-typescript-react-frontend/issues/{{id}}"
+}

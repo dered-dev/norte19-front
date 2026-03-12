@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: cityexpress_frontend
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+      - VITE_APP_BASE_URL=http://localhost:1337
+      - VITE_APP_TOKEN=4fea9b332900a0ef2a97dd7e0dc8d4c12cc5e54817273520041106500dfd547c66412c19f94c65583ef72aebb2d0f8ddc7e330b0f4f5300ef4cd42a1f87d9f4aaa36445d307188f5a25806a6335d101e49897dc7b02b169582bbfa196d948ede31a2dcad6c1e260e61ab4d02f9948a61f06b8928392a582cf77e5bfc0bc4fefb
+    volumes:
+      - ./src:/app/src:ro
+      - ./public:/app/public:ro
+
+volumes:
+  frontend_data:

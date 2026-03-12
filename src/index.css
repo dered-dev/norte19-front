@@ -1,0 +1,758 @@
+/* Fonts */
+:root {
+  --default-font: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  --heading-font: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  --nav-font: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #666666;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #333333;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #004851;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #004851;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #666666;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #004851;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  scroll-behavior: smooth;
+
+  --color-green: #004851;
+  --color-green-dark: #18232b;
+  --color-green-light: #98b6b9;
+  --color-green-extralight: #d2e4e3;
+  --color-white: #ffffff;
+  --color-gray: #c3c3c3;
+  --letter-spacing-base: 1.4px;
+  --bg-header: rgba(24, 35, 43, 0.7);
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f1f3fa;
+  --surface-color: #ffffff;
+}
+
+.white-background {
+  background-color: #ffffff;
+}
+
+.light-background-tab {
+  background-color: #f1f3fa;
+}
+
+.dark-background {
+  --background-color: #272b67;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #000000;
+  --contrast-color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #272b67;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #272b67;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+}
+
+p {
+  color: var(--accent-color);
+}
+
+.color-white {
+  color: white;
+}
+
+.color-blue {
+  color: #272b67;
+}
+
+.color-gray {
+  color: #101820;
+}
+
+.color-gray-light {
+  color: #888b8d;
+}
+
+.pad-span {
+  padding-left: 30px;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.projects .section-title {
+  text-align: left;
+}
+
+.section-title h2 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.title-hr .section-title h2 {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.title-hr .section-title h2::after {
+  content: '';
+  margin-top: 10px;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h5.title-border::after,
+h3.title-border::after,
+h2.title-border::after {
+  content: '';
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #272b67;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h2.title-border-2::after {
+  content: '';
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0 50px 0;
+  text-align: center;
+  position: relative;
+  height: 500px;
+}
+
+.page-title .title__header {
+  color: var(--color-white);
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inversionistas-banner {
+  padding: 120px 0 360px 0;
+  color: var(--default-color);
+  background-color: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.page-title:before {
+  content: '';
+  background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
+  position: absolute;
+  inset: 0;
+}
+
+.page-title h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.page-title .breadcrumbs ol,
+.inversionistas-banner .breadcrumbs ol,
+.contact-tabs-bg .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.breadcrumbs ol li a,
+.contact-tabs-bg .breadcrumbs ol li a {
+  color: #888b8d;
+  text-decoration: none;
+}
+
+.page-title .breadcrumbs ol li + li,
+.inversionistas-banner .breadcrumbs ol li + li,
+.contact-tabs-bg .breadcrumbs ol li + li {
+  padding-left: 10px;
+  color: white;
+}
+
+.page-title .breadcrumbs ol li + li::before,
+.inversionistas-banner .breadcrumbs ol li + li::before,
+.contact-tabs-bg .breadcrumbs ol li + li::before {
+  content: '|';
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+.pad-banner {
+  padding: 60px 0px 120px 30px;
+}
+
+.pad-banner h2 {
+  font-size: 46px;
+}
+
+.pad-60 {
+  padding: 60px 0px;
+}
+
+.margin-revese {
+  margin-top: -400px;
+}
+
+.inversionistas-banner .nav-tabs .nav-link {
+  border: var(--bs-nav-tabs-border-width) solid white;
+  color: white;
+}
+
+.inversionistas-banner .nav-tabs .nav-link:focus,
+.inversionistas-banner .nav-tabs .nav-link:hover {
+  border-color: var(--bs-nav-tabs-link-hover-border-color) solid #bebebe;
+  color: #bebebe;
+}
+
+.inversionistas-banner .nav-tabs .nav-item.show .nav-link,
+.inversionistas-banner .nav-tabs .nav-link.active {
+  color: white;
+}
+
+.download-btn {
+  color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 10px 30px;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  -webkit-filter: grayscale(100);
+  filter: grayscale(100);
+}
+
+.clients .swiper-slide img:hover {
+  -webkit-filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+.clients .swiper-wrapper {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.nomargin {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.about-images {
+  align-content: center;
+}
+
+.margin-section {
+  padding: 0 40px;
+  align-content: center;
+}
+
+.p-justify {
+  text-align: justify;
+}
+
+.back-develop,
+.back-technology,
+.back-menu,
+.back-cocteleria,
+.back-cocteleria-2,
+.back-report,
+.back-bursatil,
+.back-soluciones,
+.back-administracion,
+.back-prospectos,
+.back-fstay,
+.back-huespedes,
+.back-manifiesto,
+.back-politica,
+.back-mision,
+.back-vision {
+  padding: 150px;
+}
+
+.form-control {
+  color: var(--bs-body-color);
+  border: 1px solid transparent;
+  border-radius: 0px;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  border-bottom: 1px solid var(--color-green);
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid var(--color-green);
+}
+
+.bolsa-de-trabajo .form-control {
+  border-bottom: 1px solid var(--color-green);
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+.bolsa-de-trabajo .form-control::-webkit-input-placeholder {
+  color: var(--color-gray);
+}
+
+.bolsa-de-trabajo .form-control::-moz-placeholder {
+  color: var(--color-gray);
+}
+
+.bolsa-de-trabajo .form-control:-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.bolsa-de-trabajo .form-control::-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.bolsa-de-trabajo .form-control::placeholder {
+  color: var(--color-gray);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: var(--color-gray);
+}
+
+.form-control::-moz-placeholder {
+  color: var(--color-gray);
+}
+
+.form-control:-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.form-control::-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.form-control::placeholder {
+  color: var(--color-gray);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.back-form {
+  box-shadow: 0px 12px 30px 0px rgba(16, 24, 32, 0.05);
+  border-radius: 6px;
+  background-color: white;
+  padding: 40px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.services-margin {
+  padding: 0px 40px 0px 0px;
+  align-content: center;
+}
+
+.gestion-margin {
+  padding: 0px 0px 0px 40px;
+  align-content: center;
+}
+
+.btn__filled {
+  background-color: var(--accent-color) !important;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  border-radius: 0 !important;
+}
+.btn__filled:hover {
+  background-color: var(--color-green-dark) !important;
+  color: var(--color-white) !important;
+}
+
+@media (max-width: 991px) {
+  .services-margin,
+  .gestion-margin {
+    padding: 0px 25px;
+  }
+}
+
+/* Spinner Loading */
+.container-loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text terms and conditions */
+.accept-terms {
+  font-size: 12px;
+  color: var(--accent-color);
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.accept-terms-white div p {
+  color: var(--accent-color);
+}
+
+.accept-terms-white div p a {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.text-black p {
+  color: black !important;
+}
+
+.text-gray {
+  color: #888b8d;
+}
+
+.url-policy {
+  color: #272b67;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Swiper cards Section */
+.card-slider {
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+}
+
+.background-images {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.nested-child {
+  margin-top: 1rem;
+}
+
+.textarea-form {
+  resize: none;
+  min-height: 100px !important;
+}
+
+.text-label {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.btn-send-form {
+  display: inline-flex;
+  width: 100%;
+  height: 44px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 1px solid var(--White, #fff);
+  background: var(--color-green);
+  color: white !important;
+  text-transform: uppercase;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 1.4px;
+  border-radius: 0;
+}
+
+.read-more {
+  color: #272b67;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.grecaptcha-badge {
+  z-index: 123;
+}
+
+.color__base {
+  color: var(--color-green);
+}
+
+.lengend__termsandconditions {
+  color: var(--accent-color);
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+.lengend__termsandconditions a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.recaptcha__legend {
+  color: var(--color-green-light);
+  font-size: 0.875rem;
+}
+
+/* header hero */
+
+.page-title .banner__page__title {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 1.5em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.page-title .banner__page__title strong {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.restaurant__footer {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: var(--accent-color);
+  font-size: 1rem;
+}
+.restaurant__footer h5 {
+  font-size: 2rem;
+}
+
+.about__restaurant {
+  padding: 4rem 1rem;
+}
+
+.about__restaurant__info {
+  padding: 2rem;
+  border: 1px solid var(--color-green);
+}
+
+.about__restaurant__info h2 {
+  letter-spacing: 0.125em;
+  font-size: 2.25rem;
+}
+
+.restaurant__image__wrapper,
+.bordered__image {
+  position: relative;
+  display: inline-flex;
+}
+.bordered__image:before,
+.restaurant__image__wrapper:before {
+  content: '';
+  position: absolute;
+  right: -1.5rem;
+  top: -1.5rem;
+  background-color: var(--accent-color);
+  width: 90px;
+  height: 90px;
+  z-index: 1;
+}
+.restaurant__image__wrapper img,
+.bordered__image img {
+  z-index: 2;
+  position: relative;
+}
+
+.about__restaurant__content {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.restaurant__tab__contenttext {
+  background-color: var(--accent-color);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 0;
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.restaurant__tab__contentinfo {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item__tab__content {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.item__tab__middle {
+  padding: 2rem;
+  border: 1px solid var(--color-green-extralight);
+  display: flex;
+  display: inline-block;
+  width: calc((1320px / 2));
+  margin: 0 1rem 2rem;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.tab__contentmiddle__title {
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+
+.item__tab__middle .img-restaurant {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap__mision .is__mision {
+    max-width: calc(100% - 4rem) !important;
+    min-width: calc(100% - 4rem);
+  }
+  .wrap__mision .is__mision:nth-of-type(1) {
+    margin-right: 0 !important;
+  }
+  .page-title .banner__page__title {
+    font-size: 1.25rem;
+  }
+  .page-title .banner__page__title strong {
+    font-size: 2rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.75rem;
+  }
+}

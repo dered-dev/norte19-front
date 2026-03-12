@@ -1,0 +1,15 @@
+.nav-tabs .nav-item.show .nav-link,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link .nav-link-graphic {
+    color: #272B67;
+    background-color: white;
+    font-weight: 700;
+}
+
+.action-graphic .apexcharts-menu {
+    color: #272B67;
+}
+
+.container-tab-graphic {
+    margin-right: 30px;
+}

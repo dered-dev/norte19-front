@@ -1,0 +1,13 @@
+{
+    "viewMore": "See more",
+    "viewLess": "See less",
+    "downloads": "Downloads",
+    "download": "Download",
+    "documents": "Documents",
+    "home": "Home",
+    "selectFile": "Select file",
+    "sendSuccessForm": "Great! Your message has been sent successfully. 🎉 We'll be reviewing it and will get back to you soon.",
+    "sendErrorForm": "Oh no, it looks like there was a problem sending your message. 😟 Don't worry, you can try again later.",
+    "error404Subtitle": "The requested URL was not found on this server",
+    "goToHome": "Go to Home"
+}

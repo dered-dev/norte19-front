@@ -1,0 +1,50 @@
+.nav-tabs .nav-item.show .nav-link,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: #272B67;
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+    border-radius: 6px;
+}
+
+.nav-pills .nav-link {
+    cursor: pointer;
+    border: 1px solid #DBDBDB;
+    color: #888B8D;
+}
+
+.back-denuncias {
+    box-shadow: 0px 12px 30px 0px rgba(16, 24, 32, 0.05);
+    border-radius: 6px;
+    background-color: white;
+    padding: 25px;
+}
+
+/* Politic Section */
+.back-politica {
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+}
+
+/* Goals Section */
+.goals-slider {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* Certifications Section */
+.swiper-clients .swiper-wrapper {
+    align-items: center;
+    text-align: center;
+}
+
+.imgs-clients {
+    width: 100px;
+}
+
+@media (max-width: 991px) {
+    .imgs-clients {
+        width: 60px;
+    }
+}

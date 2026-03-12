@@ -1,0 +1,35 @@
+.img-header {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.investor-tab>.nav-item .nav-link {
+    cursor: pointer;
+    color: white;
+    border: 1px solid #FFFFFF;
+}
+
+.investor-tab .nav-tabs .nav-item.show .nav-link,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: #272B67;
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+    border-radius: 6px;
+    border: 1px solid #FFFFFF;
+}
+
+.title-header {
+    font-size: 46px;
+}
+
+@media (max-width: 1024px) {
+    .title-header {
+        font-size: 24px;
+    }
+
+    .img-header {
+        max-height: 700px;
+        object-fit: cover;
+    }
+}

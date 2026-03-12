@@ -1,0 +1,18 @@
+.card-service-space {
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .cards-services {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .cards-services::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-service-space {
+        margin-top: 0px;
+    }
+}

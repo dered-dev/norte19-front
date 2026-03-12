@@ -1,0 +1,107 @@
+/* Team Section */
+.team .member {
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.team .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  padding: 25px 2rem;
+  text-align: left;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: rgba(41, 45, 51, 1);
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(148, 151, 161, 1);
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(148, 151, 161, 1);
+}
+
+.space-card {
+  margin-bottom: 25px;
+  position: relative;
+}
+.space-card:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -1.5rem;
+  background-color: var(--accent-color);
+  width: 90px;
+  height: 90px;
+}
+
+.team .member .member-info h4.member__name {
+  color: var(--accent-color) !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  min-height: 60px;
+}
+.team .member .member-info span.member__position {
+  color: var(--accent-color) !important;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media (min-width: 1400px) {
+  .team .member {
+    min-height: 410px;
+  }
+}
+
+/* Modal team section */
+.modal-team {
+  max-width: 900px;
+}
+
+@media (max-width: 768px) {
+  .modal-team {
+    margin: 0;
+  }
+}
+
+.container-close-modal {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.close-modal {
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0px 3px 8px 0px rgba(167, 174, 181, 0.4);
+  background-color: white;
+  border: 1px solid transparent;
+}
+
+.container-info-modal {
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.img-member {
+  width: 100%;
+  max-height: 310px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}

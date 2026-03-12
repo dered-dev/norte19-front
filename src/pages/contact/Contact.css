@@ -1,0 +1,53 @@
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link.active {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color) !important;
+}
+
+.nav-tabs .nav-link {
+  padding: 15px 25px;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-green-light) !important;
+  color: var(--color-green-dark);
+  font-weight: 400;
+  font-size: 0.875rem;
+  transition: all linear 0.25s;
+}
+
+.back-form {
+  border-radius: 0;
+  background-color: white;
+  padding: 40px;
+  border: 2px solid var(--color-green);
+}
+
+.select-form {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(136, 139, 141, 1);
+}
+
+.contact__content {
+  background-color: var(--color-green-extralight);
+  padding-left: 2rem;
+  color: var(--color-green);
+}
+
+.contact__content__title {
+  color: var(--color-green);
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  font-family: var(--default-font);
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 1.35em;
+}
+.contact__content__description {
+  color: var(--color-green);
+  font-size: 1rem;
+  font-family: var(--default-font);
+}

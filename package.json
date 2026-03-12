@@ -1,0 +1,123 @@
+{
+  "name": "city-express",
+  "version": "0.1.58",
+  "private": true,
+  "dependencies": {
+    "-": "^0.0.1",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@lineiconshq/free-icons": "^1.0.4",
+    "@lineiconshq/react-lineicons": "^1.0.5",
+    "@types/bootstrap": "^5.2.10",
+    "@types/node": "^20.16.6",
+    "@types/prop-types": "^15.7.7",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "apexcharts": "^3.54.1",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "classnames": "^2.5.1",
+    "cleave.js": "^1.6.0",
+    "i18next": "^23.16.0",
+    "lightbox.js-react": "^1.1.3",
+    "react": "^18.3.1",
+    "react-apexcharts": "^1.4.1",
+    "react-awesome-reveal": "^4.2.14",
+    "react-bootstrap-icons": "^1.11.4",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-i18next": "^15.0.3",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.26.1",
+    "react-scroll-motion": "^0.3.3",
+    "reactstrap": "^9.2.2",
+    "save-dev": "^0.0.1-security",
+    "standard-version": "^9.5.0",
+    "swiper": "^11.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1",
+    "web-vitals": "^2.1.4",
+    "zustand": "^5.0.0-rc.2"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/* --fix --max-warnings=0",
+    "format": "prettier . --write",
+    "release": "standard-version",
+    "prepare": "husky install",
+    "test": "vitest --coverage",
+    "test:ui": "vitest --ui --coverage",
+    "coverage": "vitest run --coverage",
+    "test:coverage": "vitest -- --coverage --coverageReporters=json-summary,lcov"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/cleave.js": "^1.4.12",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vitest/coverage-v8": "^2.1.1",
+    "@vitest/ui": "^2.1.1",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.36.1",
+    "globals": "^15.9.0",
+    "husky": "^8.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "typescript-eslint": "^8.4.0",
+    "validate-branch-name": "^1.3.1",
+    "vite": "^5.4.7",
+    "vite-plugin-sitemap": "^0.7.1"
+  },
+  "overrides": {
+    "cross-spawn": "^7.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npx validate-branch-name",
+      "npm run lint"
+    ]
+  },
+  "build": {
+    "chunkSizeWarningLimit": 1600
+  },
+  "validate-branch-name": {
+    "pattern": "^(main|dev|uat|qa){1}$|^(feature|fix|hotfix|release|ci|docs|style|chore|test|build|revert)/.+$",
+    "errorMsg": "La rama no cumple con el estandar definido, ejemplo: feature/, fix/, hotfix/, release/, ci/, docs/, style/, chore/, test/, build/, revert/"
+  }
+}

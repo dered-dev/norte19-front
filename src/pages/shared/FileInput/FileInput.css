@@ -1,0 +1,24 @@
+.custom-file-div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #888B8D;
+    overflow: hidden;
+}
+
+.btn-file {
+    background-color: #EEEEEE;
+    color: #272B67;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.placeholder-file {
+    flex: 1;
+    padding-bottom: 5px;
+    color: #888B8D;
+}

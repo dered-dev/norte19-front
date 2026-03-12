@@ -1,0 +1,165 @@
+.header__description {
+  max-width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.culture__header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.culture__description {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--accent-color);
+}
+
+.wrap__culture .title__culture {
+  font-size: 2.25rem;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-family: var(--default-font);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.wrap__mision {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.wrap__culture {
+  width: 100%;
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.wrap__mision .is__mision {
+  max-width: calc(((1320px) / 2) - 2rem);
+  width: calc(((1320px) / 2) - 2rem);
+  display: inline-flex;
+  border: 1px solid var(--color-green-extralight);
+  padding: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: var(--accent-color);
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.wrap__mision .is__mision:nth-of-type(1) {
+  margin-right: 2rem;
+}
+.wrap__mision .title__mision {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+
+.block__maximas {
+  width: 100%;
+}
+
+.wrap__title__maximas {
+  background-color: var(--accent-color);
+  padding: 4rem 2rem;
+}
+.title__maximas {
+  color: var(--color-white);
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+
+.list__maximas {
+}
+.list__maximas > div > div {
+  display: flex;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list__maximas .nested-child {
+  border: 1px solid var(--color-green-extralight);
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--accent-color);
+}
+.list__maximas .nested-child svg {
+  display: none;
+}
+
+.leaders__jobboard__form {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.leaders__jobboard__form form {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border: 1px solid var(--accent-color);
+}
+
+.leaders__jobboard__form form label {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.leaders__jobboard__description {
+  color: var(--color-white);
+  font-size: 1rem;
+  line-height: 1.5em;
+  max-width: 450px;
+}
+.leaders__jobboard__description p {
+  font-family: var(--default-font);
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap__culture .title__culture {
+    font-size: 1.5rem;
+    letter-spacing: 0.065em;
+  }
+
+  .title__maximas {
+    font-size: 1.5rem;
+  }
+  .list__maximas {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .list__maximas .nested-child {
+    font-size: 1rem;
+    width: 48%;
+  }
+}

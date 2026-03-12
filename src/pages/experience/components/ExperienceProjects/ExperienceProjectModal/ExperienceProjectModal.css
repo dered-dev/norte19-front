@@ -1,0 +1,33 @@
+.img-project {
+    width: 100%;
+    max-height: 345px;
+    object-fit: cover;
+}
+
+.container-close-modal {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    padding: 0;
+    right: 0;
+}
+
+.close-modal {
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.00);
+    box-shadow: 0px 3px 8px 0px rgba(167, 174, 181, 0.40);
+    background-color: white;
+    border: 1px solid transparent;
+    width: 34px;
+    height: 34px;
+}
+
+.container-info-modal {
+    padding: 30px;
+}
+
+.title-modal-project {
+    font-weight: 700;
+    font-size: 22px;
+    color: #101820;
+}

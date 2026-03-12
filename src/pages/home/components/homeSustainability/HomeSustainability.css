@@ -1,0 +1,14 @@
+.swiper-clients .swiper-wrapper {
+    align-items: center;
+    text-align: center;
+}
+
+.imgs-clients {
+    width: 100px;
+}
+
+@media (max-width: 991px) {
+    .imgs-clients {
+        width: 60px;
+    }
+}

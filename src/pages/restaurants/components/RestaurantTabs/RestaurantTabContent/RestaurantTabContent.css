@@ -1,0 +1,35 @@
+.container-info-tab {
+    margin-bottom: 80px;
+}
+
+.services-margin {
+    padding: 0px 40px 0px 0px;
+    align-content: center;
+}
+
+.gestion-margin {
+    padding: 0px 0px 0px 40px;
+    align-content: center;
+}
+
+.img-menu-restaurant {
+    height: 280px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .img-restaurant {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .services-margin,
+    .gestion-margin {
+        padding: 0px 25px;
+    }
+
+    .container-img-menu-restaurant {
+        padding: 0;
+    }
+}

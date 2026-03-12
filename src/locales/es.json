@@ -1,0 +1,13 @@
+{
+    "viewMore": "Ver más",
+    "viewLess": "Ver menos",
+    "downloads": "Descargas",
+    "download": "Descargar",
+    "documents": "Documentos",
+    "home": "Inicio",
+    "selectFile": "Seleccionar archivo",
+    "sendSuccessForm": "¡Genial! Tu mensaje se ha enviado con éxito. 🎉 Estaremos revisándolo y nos pondremos en contacto pronto.",
+    "sendErrorForm": "Oh no, parece que hubo un problema al enviar tu mensaje. 😟 No te preocupes, puedes intentarlo de nuevo más tarde.",
+    "error404Subtitle": "No se ha encontrado la URL solicitada en este servidor",
+    "goToHome": "Ir al Inicio"
+}
