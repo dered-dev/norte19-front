@@ -36,6 +36,8 @@
 .investor__stats__numbers {
   background-color: var(--accent-color);
   color: var(--color-white);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .stats .stats-item p {
@@ -74,4 +76,29 @@
   letter-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.documents__card {
+  background-color: var(--color-green-extralight);
+}
+
+.document__button__rendered {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  padding: 1rem 1rem;
+}
+
+.document__button__rendered svg {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+}
+
+.documents__card__title {
+  color: var(--accent-color);
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
 }

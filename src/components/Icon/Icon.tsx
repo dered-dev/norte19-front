@@ -11,9 +11,7 @@ export const Icon = ({ iconName, ...props }: IconProps) => {
   // Check if the icon exists
   if (!BootstrapIcon) {
     return <icons.QuestionCircle {...props} />;
-  } else {
-
-  }
+  } 
 
   return <BootstrapIcon {...props} />;
 };

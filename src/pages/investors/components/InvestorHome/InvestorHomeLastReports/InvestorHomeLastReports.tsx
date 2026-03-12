@@ -21,16 +21,17 @@ const InvestorHomeLastReports = ({ data, index }: { data: Section, index: number
      */
     const renderDocuments = () => {
         return data.documents?.map((document) => (
-            <p key={document.id}>
-                <Icon iconName='Check2' size={20} className='color-gray' />
+            <p key={document.id} className=' d-flex align-items-center document__button__rendered'>
+                
                 <a
                     href={document.document?.data?.attributes?.url}
                     target="_blank"
-                    className="color-gray ms-1"
+                    className="color-gray me-2"
                     rel="noreferrer"
                 >
                     <b>{document.name}</b>
                 </a>
+                <Icon iconName='Download' size={20} className='color-gray' />
             </p>
         ))
     }
@@ -41,7 +42,7 @@ const InvestorHomeLastReports = ({ data, index }: { data: Section, index: number
      */
     const renderLinks = () => {
         return data.links?.map((document) => (
-            <p key={document.id}>
+            <p key={document.id} className='render__link'>
                 <Icon iconName='Check2' size={20} className='color-gray' />
                 <a
                     href={document.url}
@@ -58,7 +59,12 @@ const InvestorHomeLastReports = ({ data, index }: { data: Section, index: number
 
     return (
 
-        <div className="about light-background-tab pad-60">
+        <div className={
+                classnames("about light-background-tab pad-60", { 
+                    'documents__card': data.documents?.length , 
+                    'links__card': data.links?.length 
+                })
+            }>
             <div className="container">
                 <div className="row gy-4">
                     <div className={classnames("col-lg-6 content", {
@@ -66,7 +72,10 @@ const InvestorHomeLastReports = ({ data, index }: { data: Section, index: number
                         'services-margin': index % 2 === 0
                     })}>
                         <Fade direction="up" triggerOnce>
-                            <h2 className="mt-30 title-border">
+                            <h2 className={ classnames("mt-30", {
+                                'mb-5 documents__card__title': data.documents?.length , 
+                                'links__card__title': data.links?.length
+                            }) }>
                                 <b>{data.title}</b>
                             </h2>
                             {
