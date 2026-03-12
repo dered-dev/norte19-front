@@ -20,27 +20,29 @@ const InvestorHomeNumbers = ({ data }: { data: Innumbers }): React.JSX.Element =
         return data.numbers.map((card, index) => (
 
             <div key={index} className="col-lg-3 col-md-3 col-sm-3">
-                <div className="stats-item text-left w-100 h-100">
-                    <p>{card.subtitle}</p>
+                <div className="stats-item text-center w-100 h-100">
                     <CountUp
+                        className="stats__number"
+                        start={0}
                         end={card.amount}
                         duration={3}
                     />
+                    <p>{card.subtitle}</p>
                 </div>
             </div>
         ))
     }
 
     return (
-        <div className="about responsive-margin pad-60">
+        <div className="about responsive-margin pad-60 investor__stats__numbers">
             <div className="container" data-aos="fade-up">
-                <h2 className="title-border">
-                    <b>{data.title}</b>
+                <h2 className="text-center investor__stats__title mt-3 mb-5">
+                    {data.title}
                 </h2>
             </div>
 
             <div className="container">
-                <div className="row">
+                <div className="row pt-4">
                     <div className="col-lg-12">
                         <Fade direction="up" triggerOnce>
                             <div id="stats" className="stats inversion-stats">

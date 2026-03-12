@@ -1,18 +1,77 @@
 .investor-accordion {
-    border: 1px solid #888B8D !important;
-    border-radius: 6px !important;
+  border: 1px solid #888b8d !important;
+  border-radius: 6px !important;
 }
 
 .investor-accordion .accordion-button {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .investor-accordion .accordion-body {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .accordion-button::after {
-    background-image: url("./components/InvestorUs/assets/chevrondown.svg") !important;
-    padding-right: 30px;
+  background-image: url('./components/InvestorUs/assets/chevrondown.svg') !important;
+  padding-right: 30px;
+}
+
+.more__info {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.more__info__title {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.block__more__info {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.investor__stats__numbers {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.stats .stats-item p {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.stats .stats-item span {
+  color: var(--color-white);
+  font-size: 4rem;
+  display: inline-block;
+  padding-bottom: 1.5rem;
+}
+.stats__number {
+  color: var(--color-white);
+  position: relative;
+}
+
+.stats__number:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  display: inline-block;
+  border-bottom: 1px solid var(--color-white);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0.75rem;
+}
+
+.investor__stats__title {
+  color: var(--color-white);
+  font-size: 2.25rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: 400;
 }
