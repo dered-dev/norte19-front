@@ -15,7 +15,7 @@ import { Innumbers } from "../../../interfaces/InvestorsHome"
  */
 const InvestorHomeMoreInfo = ({ data }: { data: Innumbers }): React.JSX.Element => {
     return (
-        <div className="about">
+        <div className="about more__info">
             <div className="container-fluid">
                 <div className="row gy-4">
                     <div className="col-lg-6 nomargin">
